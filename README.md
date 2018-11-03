@@ -15,7 +15,7 @@ atmega barebone
 
 - [atmega barebone schematics/pcb](https://easyeda.com/lorenzo.delana/atmega-barebone) can be etched using this [procedure](https://github.com/devel0/knowledge/blob/master/electronics/pcb-etching.md) on a copper 70x49mm ; notes:
   - use flux to ease soldering
-  - 0.8mm drill bit for 14x2 atmega socket and C1 electrolitic ; 1.0mm for other holes  
+  - 0.8mm drill bit for C1 electrolitic ; 1.0mm for other holes  
 - plastic case can be built using 3d printer and this [parametric](https://www.thingiverse.com/apps/customizer/run?thing_id=3182923)
   - part : `box`
   - wt : `2`
