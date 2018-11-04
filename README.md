@@ -2,7 +2,7 @@
 
 atmega barebone
 
-<img src="doc/20181101_161646x.jpg" width=500/>
+<img src="doc/20181104_113305x.jpg" width=500/>
 
 ## features
 
