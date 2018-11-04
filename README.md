@@ -10,10 +10,15 @@ atmega barebone
 - ICSP connector
 - micro usb connector with [ams1117-3.3](http://www.advanced-monolithic.com/pdf/ds1117.pdf) voltage regulator
 - missing reset button ( can easily replaced for testing purpose by a F-F dupont cable attached to U4 GND that touch reset PC6 when needed )
+- JP5 ( VCC voltage selector between 3V3 or 5VUSB )
+- power out GND-3V3 GND-5V addictionals
+- J2 SPI addictional (MOSI, MISO, SCK)
+- atmega can programmed by usbasp through ICSP connector while for example an enc28j60 or W5500 connected to PB2,PB3,PB4,PB5 and another device like an SD card can be attached through J2 addictional SPI through 3x 330ohm resistor between J2 pin and SD card SPI pins MOSI, MISO, SCK ( [ref](http://ww1.microchip.com/downloads/en/AppNotes/atmel-2521-avr-hardware-design-considerations_applicationnote_avr042.pdf) "Shared Use of SPI Programming Lines" )
 
 ## prerequisites
 
 - atmega barebone [schematics](https://easyeda.com/editor#id=36a8af576a884b809b451cad653df65e) and [pcb](https://easyeda.com/editor#id=20225a3eb23b4056ba70d404b958c17d) can be etched using this [procedure](https://github.com/devel0/knowledge/blob/master/electronics/pcb-etching.md) on a copper 70x49mm ; notes:
+  - [pcb](doc/pcb.pdf) and [labels](labels.pdf) ready to print
   - use flux to ease soldering
   - 0.8mm drill bit for C1 electrolitic ; 1.0mm for other holes  
 - plastic case can be built using 3d printer and this [parametric](https://www.thingiverse.com/apps/customizer/run?thing_id=3182923)
