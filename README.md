@@ -21,7 +21,7 @@ atmega barebone
   - [pcb](doc/pcb.pdf) and [labels](doc/labels.pdf) ready to print
   - use flux to ease soldering
   - 0.8mm drill bit for C1 electrolitic ; 1.0mm for other holes  
-- plastic case can be built using 3d printer and this [parametric](https://www.thingiverse.com/apps/customizer/run?thing_id=3182923)
+- plastic case can be built using 3d printer and this [parametric](https://www.thingiverse.com/thing:3182923)
   - part : `box`
   - wt : `2`
   - lss : `[2, 2, 2]`
