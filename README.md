@@ -13,7 +13,12 @@ atmega barebone
 - JP5 ( VCC voltage selector between 3V3 or 5VUSB )
 - power out GND-3V3 GND-5V addictionals
 - J2 SPI addictional (MOSI, MISO, SCK)
-- atmega can programmed by usbasp through ICSP connector while for example an enc28j60 or W5500 connected to PB2,PB3,PB4,PB5 and another device like an SD card can be attached through J2 addictional SPI through 3x 330ohm resistor between J2 pin and SD card SPI pins MOSI, MISO, SCK ( [ref](http://ww1.microchip.com/downloads/en/AppNotes/atmel-2521-avr-hardware-design-considerations_applicationnote_avr042.pdf) "Shared Use of SPI Programming Lines" )
+- atmega can programmed by usbasp through ICSP connector while for example an enc28j60 or W5500 connected to PB2,PB3,PB4,PB5 and another device like an SD card can be attached through J2 addictional SPI.
+
+## notes about SPI
+
+Each SPI device must honor MISO (MasterInputSlaveOutput) detaching when its CS (ChipSelect) goes high or this can create communication problems; to be able to do that device must use a TriState buffer (eg. [SN74LVC125A](http://www.ti.com/lit/ds/symlink/sn74lvc125a.pdf)). A good explain [here](https://www.dorkbotpdx.org/blog/paul/better_spi_bus_design_in_3_steps).
+Recently I bought an SD card breakout board that mount LVC125A chipset and at the end I found out a thread that explain why it was not working as expected: there was pin13 4OE (driving MOSI) connected to GND permanently where it need to be connected to pin8 3Y (CS signal) to enable/disable MOSI correctly. I ended up fixing it as described by [this saver](http://forum.arduino.cc/index.php?topic=360718.msg2942160#msg2942160). Hopefully exists a [new version](https://forum.arduino.cc/index.php?topic=360325.msg2942982#msg2942982) but not the one I had recently.
 
 ## prerequisites
 
