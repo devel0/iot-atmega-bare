@@ -35,13 +35,10 @@ atmega barebone
   - lh = rh = bh : `[]`
   - fh = `[ [ 18, 12, 60.5, false, wt + lss[2] ] ]`
 
-## programming
+## debugging
 
 - connect an usbasp programmer to ICSP connector
 - barebone icsp connector doesn't have VCC connected to avoid voltage source mixture
-
-## debugging
-
 - use an usb/ttl converter connecting `GND`, `RX` to atmega `GND`, `RX` ( PD1 )
 
 ## SPI
