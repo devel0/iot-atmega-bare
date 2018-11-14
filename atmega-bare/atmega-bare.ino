@@ -1,13 +1,12 @@
-#include <DPrint.h>
-using namespace SearchAThing::Arduino;
+#include <Arduino.h>
 
 void setup()
 {
-  DPrintln("serial debug");
+  Serial.begin(115200);  
 }
 
 void loop()
 {
-  DPrintln(millis());
+  Serial.println(millis());
   delay(1000);
 }
