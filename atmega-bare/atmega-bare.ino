@@ -1,12 +1,13 @@
-#include <Arduino.h>
+#include <DPrint.h>
+using namespace SearchAThing::Arduino;
 
 void setup()
 {
-  Serial.begin(115200);  
+  DPrintStrln("SETUP");
 }
 
 void loop()
 {
-  Serial.println(millis());
+  DPrintULongln(millis());
   delay(1000);
 }
