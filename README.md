@@ -18,11 +18,11 @@ atmega barebone
 ## prerequisites
 
 - [arduino-utils](https://github.com/devel0/iot-arduino-utils) allow to save precious flash
-- [vscode](https://github.com/devel0/knowledge/blob/master/electronics/vscode-arduino.md)
+- [vscode](https://github.com/devel0/knowledge/blob/master/doc/vscode-arduino.md)
 
 ## build it
 
-- atmega barebone [schematics](https://easyeda.com/editor#id=36a8af576a884b809b451cad653df65e) and [pcb](https://easyeda.com/editor#id=20225a3eb23b4056ba70d404b958c17d) can be etched using this [procedure](https://github.com/devel0/knowledge/blob/master/electronics/pcb-etching.md) on a copper 70x49mm
+- atmega barebone [schematics](https://easyeda.com/editor#id=36a8af576a884b809b451cad653df65e) and [pcb](https://easyeda.com/editor#id=20225a3eb23b4056ba70d404b958c17d) can be etched using this [procedure](https://github.com/devel0/knowledge/blob/master/doc/pcb-etching.md) on a copper 70x49mm
   - [pcb](doc/pcb.pdf) and [labels](doc/labels.pdf) ready to print
   - use flux to ease soldering
   - 0.8mm drill bit for C1 electrolitic ; 1.0mm for other holes  
