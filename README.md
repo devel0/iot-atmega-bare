@@ -42,7 +42,7 @@ atmega barebone
 - barebone icsp connector doesn't have VCC connected to avoid voltage source mixture
 - use an usb/ttl converter connecting `GND`, `RX` to atmega `GND`, `RX` ( PD1 )
 - start `code .` from sketch folder ( `atmega-bare` )
-- hit `ctrl+shift+p` to upload using usbasp programmer
+- hit `ctrl+shift+p` to upload using usbasp programmer ( [troubleshoot usbasp not found and permission pb](https://andreasrohner.at/posts/Electronics/How-to-fix-device-permissions-for-the-USBasp-programmer/) )
 - open serial port to monitor it
 
 ## SPI
