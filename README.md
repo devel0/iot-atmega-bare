@@ -19,6 +19,7 @@ atmega barebone
 
 - [arduino-utils](https://github.com/devel0/iot-arduino-utils) allow to save precious flash
 - [vscode](https://github.com/devel0/knowledge/blob/master/doc/vscode-arduino.md)
+- [arduino barebone board](https://github.com/carlosefr/atmega)
 
 ## build it
 
