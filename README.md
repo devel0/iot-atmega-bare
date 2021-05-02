@@ -4,6 +4,15 @@ atmega barebone
 
 <img src="doc/20181104_113305x.jpg" width=500/>
 
+<!-- TOC -->
+* [features](#features)
+* [prerequisites](#prerequisites)
+* [build it](#build-it)
+* [debugging](#debugging)
+* [SPI](#spi)
+* [vscode + platformio](#vscode--platformio)
+<!-- TOCEND -->
+
 ## features
 
 - simple [atmega8](https://www.microchip.com/wwwproducts/en/ATmega8)/[328](https://www.microchip.com/wwwproducts/en/ATmega328) holder
