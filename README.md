@@ -49,3 +49,7 @@ atmega barebone
 
 Each SPI device must honor MISO (MasterInputSlaveOutput) detaching when its CS (ChipSelect) goes high or this can create communication problems; to be able to do that device must use a TriState buffer (eg. [SN74LVC125A](http://www.ti.com/lit/ds/symlink/sn74lvc125a.pdf)). A good explain [here](https://www.dorkbotpdx.org/blog/paul/better_spi_bus_design_in_3_steps).
 Recently I bought an SD card breakout board that mount LVC125A chipset and at the end I found out a thread that explain why it was not working as expected: there was pin13 4OE (driving MOSI) connected to GND permanently where it need to be connected to pin8 3Y (CS signal) to enable/disable MOSI correctly. I ended up fixing it as described by [this saver](http://forum.arduino.cc/index.php?topic=360718.msg2942160#msg2942160). Hopefully exists a [new version](https://forum.arduino.cc/index.php?topic=360325.msg2942982#msg2942982) but not the one I had recently.
+
+## vscode + platformio
+
+[see here](https://github.com/devel0/knowledge/blob/6dbc7dc30895a80cf588d6f9f914295d8d2a6df2/doc/vscode-arduino-platformio-atmega328.md#vscode-arduino-platformio-atmega328)
